@@ -1,0 +1,8 @@
+.decor{
+  display: flex;
+  justify-content: center;
+  font-size: 2.5vh;
+  font-weight: 300;
+  font-family: Cormorant Infant, serif;
+  font-style: normal;
+}

@@ -1,0 +1,30 @@
+.about {
+  opacity: 0;
+  animation: ani 3s forwards;
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 5% 0;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 3vh;
+  font-size: 48px;
+  font-weight: 400;
+  font-family: Cormorant Infant, serif;
+  font-style: normal;
+  color: rgb(28,28,28);
+  text-align: start;
+}
+
+.about-subtext {
+  font-size: 30px;
+}
+
+
+.about-image {
+  object-fit: cover;
+  object-position: 0px -230px;
+}

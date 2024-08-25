@@ -1,0 +1,13 @@
+div[dir="ltr"] {
+  margin-left: 33.5vw;
+  width: 500px;
+  padding-bottom: 13vh;
+}
+
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 600px;
+}

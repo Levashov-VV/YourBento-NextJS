@@ -1,0 +1,53 @@
+.header {
+  padding: 2.5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #B0B0A9;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+.header-number {
+  margin-left: 5.5vh;
+  display: flex;
+  font-size: 3.5vh;
+  font-weight: 300;
+  font-family: Cormorant Infant, serif;
+  font-style: normal;
+  color: rgb(28,28,28);
+}
+
+.header-name__button {
+  margin-right: 2vw;
+  background-color: #B0B0A9;
+  color: rgb(28,28,28);;
+  font-family: Bodoni Moda;
+  font-size: 5.2vh;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header-button {
+  width: 15vw;
+  height: 8vh;
+  font-family: Cormorant Infant, serif;
+  font-size: 3.5vh;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.5vh;
+  background-color: #7C7C73;
+  color: rgb(245 245 245);
+}
+
+.header-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}

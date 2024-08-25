@@ -1,0 +1,19 @@
+.block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.block-line {
+  display: flex;
+  width: 90vw;
+  border: 2px solid #000;
+}
+
+.block-text {
+  margin: 5.5vh 0px 4vh 0px;
+  font-family: Cormorant Infant, serif;
+  font-size: 5.2vh;
+  font-weight: 400;
+  font-style: normal;
+}

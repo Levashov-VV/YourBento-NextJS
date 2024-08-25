@@ -1,0 +1,78 @@
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.block-line {
+  border: 2px solid #000;
+  width: 90vw;
+  display: flex;
+}
+
+.block-text {
+  font-size: 5.2vh;
+  font-weight: 400;
+  font-family: Cormorant Infant, serif;
+  font-style: normal;
+  margin: 5.5vh 0px 4vh 0px;
+}
+
+.delivery {
+  margin: 3vh 3vw;
+}
+
+.delivery-paragraph {
+  font-size: 2.5vh;
+  font-weight: 300;
+  font-family: Cormorant Infant, serif;
+  font-style: normal;
+  color:rgb(28,28,28);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-text {
+  width: 40%;
+}
+
+#map {
+  margin-top: 5%;
+  margin-right: 2%;
+}
+
+.delivery-text {
+  margin: 3vh 0px;
+  font-size: 2.5vh;
+  font-weight: 300;
+  font-family: Cormorant Infant, serif;
+  font-style: normal;
+}
+
+.delivery-header {
+  margin: 3vh 0px;
+  font-size: 3.5vh;
+  font-weight: 300;
+  color: rgb(28,28,28);
+  font-family: Cormorant Infant, serif;
+  font-style: normal;
+}
+
+.delivery-title {
+  margin: 3vh 0px;
+}
+
+.delivery-text__title {
+  display: flex;
+  justify-content: center;
+  margin-right: 15vh;
+}
+
+.car {
+  width: 5vh;
+  height: 7vh;
+  margin-right: 3vh;
+}
