@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   padding: 3% 5% 0;
+  height: 70vh;
 }
 
 .about-text {
@@ -11,7 +12,7 @@
   flex-direction: column;
   justify-content: center;
   row-gap: 3vh;
-  font-size: 48px;
+  font-size: 7vh;
   font-weight: 400;
   font-family: Cormorant Infant, serif;
   font-style: normal;
@@ -20,11 +21,13 @@
 }
 
 .about-subtext {
-  font-size: 30px;
+  font-size: 4vh;
 }
 
 
 .about-image {
+  width: 30vw;
+  height: 70vh;
   object-fit: cover;
-  object-position: 0px -230px;
+  object-position: 0px -30vh;
 }

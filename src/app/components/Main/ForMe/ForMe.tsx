@@ -20,8 +20,6 @@ export default function ForMe() {
           className='about-image'
           src={About} 
           alt="Bento-cake" 
-          width={450}
-          height={450}
         />
       </div>
     </div>
