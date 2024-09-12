@@ -10,7 +10,7 @@ export default function Range() {
   return(
     <>
       <header id="Range" className='block'>
-        <div className='block-text'>
+        <div className='block-texts'>
           Ассортимент
         </div>
 

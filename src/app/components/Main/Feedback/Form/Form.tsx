@@ -1,8 +1,11 @@
 'use client';
 
 import Image from 'next/image';
-import { useState } from 'react';
-import Calendar from 'react-calendar';
+import React, { useState } from "react";
+import { Calendar } from 'primereact/calendar';
+import { Nullable } from "primereact/ts-helpers";
+import 'primereact/resources/primereact.css';
+import 'primereact/resources/themes/lara-light-indigo/theme.css';
 import 'react-calendar/dist/Calendar.css';
 import Docs from '../../../../Assets/Svg-picture/document.svg';
 import './style.css';
@@ -13,7 +16,7 @@ type Value = ValuePiece | [ValuePiece, ValuePiece];
 
 
 export default function Leftpart() {
-  const [value, onChange] = useState<Value>(new Date());
+  const [date, setDate] = useState<Nullable<Date>>(null);
 
 
   return (
@@ -58,15 +61,19 @@ export default function Leftpart() {
             Выберите дату доставки вашего заказа
           </div>
 
-          <div className="feedBack-leftpart__img">
-            <Calendar onChange={onChange} value={value} />
+          <div className="card flex justify-content-center">
+            <Calendar 
+              value={date} 
+              onChange={(e) => setDate(e.value)} 
+              dateFormat="dd/mm/yy"
+            />
           </div>
         </div>
       </div>
 
       <div className="feedBack-rigthpart">
         <div className="feedBack-rigthpart__content">
-          <div>
+          <div className='textarea'>
             <label 
               htmlFor="description" 
               className="feedBack-leftpart__text">
@@ -80,32 +87,31 @@ export default function Leftpart() {
           </div>
         </div>
 
+          <label 
+            htmlFor="Person" 
+            className="feedBack-rigthpart__content"
+          >
+          <input 
+            id="Person" 
+            type="checkbox" 
+            className="feedBack-rigthpart__checkbox" 
+            required 
+          />
 
-        <label 
-          htmlFor="Person" 
-          className="feedBack-rigthpart__content"
-        >
-        <input 
-          id="Person" 
-          type="checkbox" 
-          className="feedBack-rigthpart__checkbox" 
-          required 
-        />
+            <p className="feedBack-rigthpart__text">
+              Согласие на обработку персональных данных
+            </p>
 
-          <p className="feedBack-rigthpart__text">
-            Согласие на обработку персональных данных
-          </p>
-
-          <button className="feedBack-rigthpart__btn">
-            <a>
-              <Image
-                className="feedBack-rigthpart__img" 
-                src={Docs} 
-                alt="Docs"
-              />
-            </a>
-          </button>
-        </label>
+            <button className="feedBack-rigthpart__btn">
+              <a>
+                <Image
+                  className="feedBack-rigthpart__img" 
+                  src={Docs} 
+                  alt="Docs"
+                  />
+              </a>
+            </button>
+          </label>
         <button 
           className="feedBack-rigthpart__text" 
           type='submit'>

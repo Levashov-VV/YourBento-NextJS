@@ -12,8 +12,8 @@
   flex-direction: column;
   justify-content: center;
   row-gap: 3vh;
-  font-size: 7vh;
-  font-weight: 400;
+  font-size: 45px;
+  font-weight: 500;
   font-family: Cormorant Infant, serif;
   font-style: normal;
   color: rgb(28,28,28);
@@ -21,7 +21,8 @@
 }
 
 .about-subtext {
-  font-size: 4vh;
+  font-size: 30px;
+  font-weight: 300;
 }
 
 
@@ -29,5 +30,123 @@
   width: 30vw;
   height: 70vh;
   object-fit: cover;
-  object-position: 0px -30vh;
+  object-position: 0px -25vh;
+}
+
+@media (max-width: 1400px) {
+  .about-text{
+    font-size: 40px;
+    font-weight: 500;
+  }
+
+  .about-subtext {
+    font-size: 30px;
+  }
+
+  .about-image {
+    width: 550px;
+    height: 850px;
+    object-position: 0px -15vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about {
+    height: 75vh;
+  }
+
+  .about-text{
+    font-size: 30px;
+  }
+
+  .about-subtext {
+    font-size: 26px;
+  }
+
+  .about-image {
+    width: 480px;
+    height: 75vh;
+    object-position: 0px -150px;
+  }
+}
+
+@media (max-width: 810px) {
+  .about {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2vh;
+    height: 60vh;
+  }
+  .about-text{
+    font-size: 30px;
+    text-align: center;
+    row-gap: 2vh;
+  }
+
+  .about-subtext {
+    font-size: 25px;
+  }
+
+  .about-image {
+    width: 300px;
+    height: 450px;
+    object-position: 0px -30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-text{
+    font-size: 25px;
+  }
+
+  .about-subtext {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about {
+    height: 50vh;
+  }
+
+  .about-text{
+    font-size: 25px;
+  }
+
+  .about-subtext {
+    font-size: 20px;
+  }
+
+  .about-image {
+    object-position: -10px -10px;
+  }
+}
+
+@media (max-width: 436px) {
+  .about-text{
+    font-size: 20px;
+  }
+
+  .about-subtext {
+    font-size: 16px;
+  }
+
+  .about-image {
+    object-position: -10px -20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .about {
+    height: 50vh;
+  }
+  .about-text{
+    padding-top: 30px;
+  }
+
+  .about-image {
+    object-position: 0px 10px;
+  }
 }

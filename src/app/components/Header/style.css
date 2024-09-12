@@ -1,5 +1,5 @@
 .header {
-  padding: 2.5vh;
+  padding: 2vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,8 +15,9 @@
   width: 60px;
   height: 60px;
 }
+
 .header-number {
-  margin-left: 5.5vh;
+  margin-left: 5vw;
   display: flex;
   font-size: 3.5vh;
   font-weight: 300;
@@ -26,7 +27,6 @@
 }
 
 .header-name__button {
-  margin-right: 2vw;
   background-color: #B0B0A9;
   color: rgb(28,28,28);;
   font-family: Bodoni Moda;
@@ -36,10 +36,10 @@
 }
 
 .header-button {
-  width: 15vw;
+  width: 20vw;
   height: 8vh;
   font-family: Cormorant Infant, serif;
-  font-size: 3.5vh;
+  font-size: 5vh;
   font-weight: 400;
   font-style: normal;
   font-size: 3.5vh;
@@ -50,4 +50,153 @@
 .header-button:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1400px) {
+  .header {
+    padding: 1vh;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .header-number {
+    font-size: 30px;
+  }
+
+  .header-name__button{
+    font-size: 40px;
+    margin-right: 5vw;
+  }
+
+  .header-button {
+    font-size: 30px;
+    width: 20vw;
+    height: 6vh;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .header-number {
+    margin-left: 3vw;
+    font-size: 2.5vw;
+  }
+
+  .header-name__button{
+    font-size: 3.5vw;
+    margin-right: 3vw;
+  }
+
+  .header-button {
+    font-size: 2.3vw;
+    width: 20vw;
+    height: 5vh;
+  }
+}
+
+@media (max-width: 811px) {
+  .logo {
+    width: 55px;
+    height: 55px;
+  }
+
+  .header-number {
+    font-size: 18px;
+  }
+
+  .header-name__button{
+    font-size: 30px;
+    margin-right: 3vw;
+  }
+
+  .header-button {
+    font-size: 18px;
+    width: 20vw;
+    height: 4vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-number {
+    font-size: 16px;
+  }
+
+  .logo {
+    width: 35px;
+    height: 35px;
+  }
+
+  .header-name__button{
+    font-size: 27px;
+  }
+
+  .header-button {
+    font-size: 14px;
+    height: 3.5vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-number {
+    font-size: 12px;
+  }
+
+  .logo {
+    width: 35px;
+    height: 35px;
+  }
+
+  .header-name__button{
+    font-size: 25px;
+  }
+
+  .header-button {
+    font-size: 12px;
+    height: 3.5vh;
+  }
+}
+
+@media (max-width: 436px) {
+  .header-number {
+    font-size: 12px;
+    margin-left: 1vw;
+  }
+
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .header-name__button{
+    font-size: 20px;
+  }
+
+  .header-button {
+    font-size: 14px;
+    height: 3.5vh;
+  }
+}
+
+@media (max-width: 380px) {
+  .header-number {
+    font-size: 10px;
+    margin-left: 1vw;
+  }
+
+  .logo {
+    width: 25px;
+    height: 25px;
+  }
+
+  .header-name__button{
+    font-size: 16px;
+  }
+
+  .header-button {
+    font-size: 12px;
+    height: 3.5vh;
+  }
 }

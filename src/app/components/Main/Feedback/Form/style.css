@@ -16,7 +16,8 @@
   font-family: Cormorant Infant, serif;
   font-size: 3.5vh;
   font-weight: 300;
-  font-style: normal;;
+  font-style: normal;
+  border-radius: 12px;
   color:rgb(28,28,28);
   background-color: #B0B0A9;
 }
@@ -29,8 +30,8 @@
 }
 
 .feedBack-leftpart__file {
-  width: 47%;
-  height: 6%;
+  width: 80%;
+  height: 9%;
   margin: 2vh 0;
 }
 
@@ -47,17 +48,19 @@
 .feedBack-rigthpart{
   width: 40vw;
 }
+
 .feedBack-rigthpart__content{
   display: flex;
-  justify-content: space-between;
-  margin: 3vh 0;
 }
+
 .feedBack-rigthpart__text{
   display: flex;
   justify-content: center;
-  margin: 4vh 0vw; 
+  margin: 3vh 0vw;
+  padding-top: 3px; 
   width: 100%;
   height: 5vh;
+  border-radius: 12px;
   color: rgb(28,28,28);
   font-size: 3.5vh;
   font-weight: 300;
@@ -66,20 +69,28 @@
 }
 .feedBack-rigthpart__checkbox{
   transform: scale(2);
-  margin-right: 2vw;
+  margin: 0vh 2vw 0 1vw;
+
   width: 0.8vw;
 }
+
 .feedBack-rigthpart__btn{
   background: none;
 }
+
 .feedBack-rigthpart__img{
   width: 3vw;
   height: 3vh;
 }
+
+.textarea {
+  margin-top: 5vh;
+}
+
 .feedBack-rigthpart__textarea{
   display: flex;
   flex-direction: column;
-  margin: 3vh 0vw;
+  margin: 2vh 0vw 0;
   width: 40vw;
   height: 15vh;
   background-color: #B0B0A9;
@@ -92,4 +103,21 @@
 
 #description {
   resize:vertical;
+  border-radius: 12px;
+}
+
+.p-inputtext {
+  background-color: #B0B0A9;
+  height: 4vh;
+}
+
+.p-inputtext {
+  font-family: Cormorant Infant, serif;
+  font-size: 2.5vh;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.checkbox {
+  width: 20px;
 }

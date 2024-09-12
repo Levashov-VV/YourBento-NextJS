@@ -20,7 +20,7 @@ header {
   display: flex;
 }
 
-.block-text {
+.block-texts {
   margin: 5.5vh 0px 4vh 0px;
   font-size: 5.2vh;
   font-weight: 400;
@@ -183,4 +183,17 @@ header {
   opacity: 1;
   animation: fadeInRight;
   animation-duration: 2s
+}
+
+@media (max-width: 1400px) {
+  .block-texts {
+    margin-top: 8vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  .block-texts {
+    margin-top: 5vh;
+    font-size: 50px;
+  }
 }
